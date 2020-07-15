@@ -13,7 +13,7 @@ describe('Googleでpuppeteerを検索してリポジトリにアクセスする'
     });
   
     test('検索ワードを入力', async () => {
-      await expect(page).toFill('input[name="q"]', 'puppeteer');
+      await expect(page).toFill('input[name="q"]', 'puppeteeeer');
       await page.screenshot({ path: 'screenshots/2.png', fullPage: true });
     });
   
